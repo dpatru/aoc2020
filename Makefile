@@ -26,3 +26,9 @@ test1: 01 01.test
 04: 04.hs
 	ghc 04.hs
 
+5: 05 05.input.txt
+	time ./05 < 05.input.txt
+
+05: 05.hs
+	ghc 05.hs
+
