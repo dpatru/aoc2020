@@ -44,3 +44,12 @@ test1: 01 01.test
 07: 07.hs
 	ghc 07.hs
 
+8: 08 08.input.txt
+	time ./08 < 08.input.txt
+
+test8 :: 08 08.test
+	./08 < 08.test
+
+08: 08.hs
+	ghc 08.hs
+
