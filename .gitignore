@@ -22,6 +22,7 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 *~
+*#
 01
 01a
 01b
