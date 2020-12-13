@@ -53,3 +53,12 @@ test8 :: 08 08.test
 08: 08.hs
 	ghc 08.hs
 
+9: 09 09.input.txt
+	time ./09 < 09.input.txt
+
+test9 :: 09 09.test
+	./09 < 09.test
+
+09: 09.hs
+	ghc 09.hs
+
