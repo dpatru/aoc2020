@@ -75,3 +75,15 @@ test10a :: 10.hs 10.test0
 test10 :: 10.hs 10.test
 	ghc 10.hs
 	./10 < 10.test
+
+11: FORCE
+	ghc 11.hs
+	time ./11 < 11.input.txt
+
+test11a :: 11.hs 11.test0
+	ghc 11.hs
+	./11 < 11.test0
+
+test11 :: 11.hs 11.test
+	ghc 11.hs
+	./11 < 11.test
