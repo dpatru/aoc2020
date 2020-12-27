@@ -62,3 +62,16 @@ test9 :: 09 09.test
 09: 09.hs
 	ghc 09.hs
 
+FORCE: ;
+
+10: FORCE
+	ghc 10.hs
+	time ./10 < 10.input.txt
+
+test10a :: 10.hs 10.test0
+	ghc 10.hs
+	./10 < 10.test0
+
+test10 :: 10.hs 10.test
+	ghc 10.hs
+	./10 < 10.test
