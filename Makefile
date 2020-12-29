@@ -99,3 +99,15 @@ test12a :: 12.hs 12.test0
 test12 :: 12.hs 12.test
 	ghc 12.hs
 	./12 < 12.test
+
+13: FORCE
+	ghc 13.hs
+	time ./13 < 13.input.txt
+
+test13a :: 13.hs 13.test0
+	ghc 13.hs
+	./13 < 13.test0
+
+test13 :: 13.hs 13.test
+	ghc 13.hs
+	./13 < 13.test
